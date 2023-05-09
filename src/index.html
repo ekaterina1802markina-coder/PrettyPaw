@@ -17,19 +17,19 @@
 
       <nav class="header__nav navigation">
         <ul class="navigation__list">
-          <li class="navigation__list">
+          <li class="navigation__item">
             <a href="/index.html" class="navigation__link">Главная</a>
           </li>
-          <li class="navigation__list">
+          <li class="navigation__item">
             <a href="#about" class="navigation__link">О&nbsp;зоосаде</a>
           </li>
-          <li class="navigation__list">
+          <li class="navigation__item">
             <a href="#history" class="navigation__link">История</a>
           </li>
-          <li class="navigation__list">
+          <li class="navigation__item">
             <a href="#deeds" class="navigation__link">Добрый&nbsp;дела</a>
           </li>
-          <li class="navigation__list">
+          <li class="navigation__item">
             <a href="#career" class="navigation__link">Карьера</a>
           </li>
         </ul>
@@ -46,7 +46,7 @@
 
         <p class="hero__subtitle">С&nbsp;заботой о&nbsp;животных</p>
       </div>
-      <video class="hero_video-bg video-bg" loading="lazy" autoplay loop muted></video>
+      <video class="hero__video-bg video-bg" autoplay loop muted playsinline></video>
     </section>
 
     <section class="about">
@@ -86,7 +86,7 @@
                   <source srcset="img/leo_tablet.webp" media="(min-width: 768px)" type="image/webp">
                   <source srcset="img/leo_tablet.jpg" media="(min-width: 768px)">
                   <source srcset="img/leo.webp" type="image/webp">
-                  <img src="img/leo.jpg" alt="Пара львов" loading="lazy">
+                  <img class="about__image" src="img/leo.jpg" alt="Пара львов" loading="lazy">
                 </picture>
               </li>
 
@@ -99,7 +99,7 @@
                   <source srcset="img/parrots_tablet.webp" media="(min-width: 768px)" type="image/webp">
                   <source srcset="img/parrots_tablet.jpg" media="(min-width: 768px)">
                   <source srcset="img/parrots.webp" type="image/webp">
-                  <img src="img/parrots.jpg" alt="Группа попугаев" loading="lazy">
+                  <img class="about__image" src="img/parrots.jpg" alt="Группа попугаев" loading="lazy">
                 </picture>
               </li>
 
@@ -112,7 +112,7 @@
                   <source srcset="img/fulgens_tablet.webp" media="(min-width: 768px)" type="image/webp">
                   <source srcset="img/fulgens_tablet.jpg" media="(min-width: 768px)">
                   <source srcset="img/fulgens.webp" type="image/webp">
-                  <img src="img/fulgens.jpg" alt="Красная панда" loading="lazy">
+                  <img class="about__image" src="img/fulgens.jpg" alt="Красная панда" loading="lazy">
                 </picture>
               </li>
 
@@ -125,13 +125,13 @@
                   <source srcset="img/giraffe_tablet.webp" media="(min-width: 768px)" type="image/webp">
                   <source srcset="img/giraffe_tablet.jpg" media="(min-width: 768px)">
                   <source srcset="img/giraffe.webp" type="image/webp">
-                  <img src="img/giraffe.jpg" alt="Голова жирафа" loading="lazy">
+                  <img class="about__image" src="img/giraffe.jpg" alt="Голова жирафа" loading="lazy">
                 </picture>
               </li>
             </ul>
             <div class="about__slider-pagination swiper-pagination"></div>
           </div>
-       </div>
+        </div>
       </div>
     </section>
 
@@ -139,27 +139,28 @@
       <h2 class="visually-hidden">Локации зоопарка</h2>
 
       <ul class="location__list">
-        <li class="location__item">
+        <li class="location__item location__item_mammals">
           <h3 class="location__title">Млекопитающие</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые питаются молоком в&nbsp;раннем возрасте и&nbsp;обладают механизмом регуляции телевой температуры. В&nbsp;нашем зоосаде можно увидеть млекопитающих, таких как львы, тигры, слоны и&nbsp;обезьяны.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_birds">
           <h3 class="location__title">Птицы</h3>
           <p class="location__description">Эта группа включает в&nbsp;себя разнообразных пернатых обитателей зоопарка, от&nbsp;маленьких певчих птиц до&nbsp;больших драпированных птиц хищников. В&nbsp;нашем зоосаде можно увидеть таких птиц, как фламинго, аисты, орлы и&nbsp;павлины.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_reptiles">
           <h3 class="location__title">Рептилии</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые имеют чешуйчатую кожу и&nbsp;обладают приспособлениями для жизни на&nbsp;суше или в&nbsp;воде. В&nbsp;нашем зоосаде можно увидеть таких рептилий, как крокодилы, змеи, черепахи и&nbsp;ящерицы.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_water">
           <h3 class="location__title">Водный мир</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые живут в&nbsp;воде или зависят от&nbsp;воды для выживания. В&nbsp;нашем зоосаде можно увидеть разнообразных рыб, дельфинов, китов, акул и&nbsp;других водных животных.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_insects">
           <h3 class="location__title">Насекомый</h3>
           <p class="location__description">В&nbsp;эту группу входят разнообразные насекомые, такие как бабочки, жуки, муравьи и&nbsp;пчелы. В&nbsp;нашем зоосаде можно увидеть различных беспозвоночных и&nbsp;насекомых.</p>
         </li>
       </ul>
+      <video class="location__video-bg video-bg" autoplay loop muted playsinline></video>
     </section>
 
     <section class="career">
@@ -167,7 +168,7 @@
         <div class="career__content">
           <h4 class="career__title">Карьера у нас</h4>
 
-          <p class="career__description-career">Карьера в&nbsp;компании &laquo;PrettyPaw&raquo; может предоставить много интересных и&nbsp;перспективных возможностей для людей, увлеченных животными и&nbsp;желающих развиваться в&nbsp;этой области.</p>
+          <p class="career__description">Карьера в&nbsp;компании &laquo;PrettyPaw&raquo; может предоставить много интересных и&nbsp;перспективных возможностей для людей, увлеченных животными и&nbsp;желающих развиваться в&nbsp;этой области.</p>
 
           <a href="#career" class="career__link link-main">Подробнее</a>
         </div>
@@ -176,96 +177,77 @@
           <ul class="career__image-list swiper-wrapper">
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
-                <source srcset="img/parrots2.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/parrots2.jpg" media="(min-width: 1280px)">
-                <source srcset="img/parrots2.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/parrots2.jpg" media="(min-width: 1024px)">
-                <source srcset="img/parrots2.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/parrots2.jpg" media="(min-width: 768px)">
+                <source srcset="img/parrots2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/parrots2_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/parrots2.webp" type="image/webp">
-                <img src="img/parrots2.jpg" alt="Пара попугаев" loading="lazy">
+                <img src="img/parrots2.jpg" alt="Пара попугаев" class="career__image" loading="lazy">
               </picture>
             </li>
   
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/giraffe2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/giraffe2_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/giraffe2.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/giraffe2.jpg" media="(min-width: 1280px)">
-                <source srcset="img/giraffe2.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/giraffe2.jpg" media="(min-width: 1024px)">
-                <source srcset="img/giraffe2.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/giraffe2.jpg" media="(min-width: 768px)">
-                <source srcset="img/giraffe2.webp" type="image/webp">
-                <img src="img/giraffe2.jpg" alt="Голова жирафа" loading="lazy">
+                <img src="img/giraffe2.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
   
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/giraffes_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/giraffes_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/giraffes.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/giraffes.jpg" media="(min-width: 1280px)">
-                <source srcset="img/giraffes.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/giraffes.jpg" media="(min-width: 1024px)">
-                <source srcset="img/giraffes.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/giraffes.jpg" media="(min-width: 768px)">
-                <source srcset="img/giraffes.webp" type="image/webp">
-                <img src="img/giraffes.jpg" alt="Красная панда" loading="lazy">
+                <img src="img/giraffes.jpg" alt="Красная панда" class="career__image" loading="lazy">
+              </picture>
+            </li>
+
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/leo2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/leo2_xxl.jpg" media="(min-width: 1440px)">
+                <source srcset="img/leo2.webp" media="(min-width: 1280px)" type="image/webp">
+                <img src="img/leo2.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
   
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/meerkat_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/meerkat_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/meerkat.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/meerkat.jpg" media="(min-width: 1280px)">
-                <source srcset="img/meerkat.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/meerkat.jpg" media="(min-width: 1024px)">
-                <source srcset="img/meerkat.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/meerkat.jpg" media="(min-width: 768px)">
-                <source srcset="img/meerkat.webp" type="image/webp">
-                <img src="img/meerkat.jpg" alt="Голова жирафа" loading="lazy">
+                <img src="img/meerkat.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
 
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/flamingos_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/flamingos_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/flamingos.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/flamingos.jpg" media="(min-width: 1280px)">
-                <source srcset="img/flamingos.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/flamingos.jpg" media="(min-width: 1024px)">
-                <source srcset="img/flamingos.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/flamingos.jpg" media="(min-width: 768px)">
-                <source srcset="img/flamingos.webp" type="image/webp">
-                <img src="img/leo2.jpg" alt="Голова жирафа" loading="lazy">
+                <img src="img/flamingos.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
 
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/zebra_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/zebra_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/zebra.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/zebra.jpg" media="(min-width: 1280px)">
-                <source srcset="img/zebra.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/zebra.jpg" media="(min-width: 1024px)">
-                <source srcset="img/zebra.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/zebra.jpg" media="(min-width: 768px)">
-                <source srcset="img/zebra.webp" type="image/webp">
-                <img src="img/zebra.jpg" alt="Голова жирафа" loading="lazy">
+                <img src="img/zebra.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
 
-            <li class="about__image-item swiper-slide">
-              <picture class="about__image-wrapper">
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <source srcset="img/elephant_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/elephant_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/elephant.webp" media="(min-width: 1280px)" type="image/webp">
-                <source srcset="img/elephant.jpg" media="(min-width: 1280px)">
-                <source srcset="img/elephant.webp" media="(min-width: 1024px)" type="image/webp">
-                <source srcset="img/elephant.jpg" media="(min-width: 1024px)">
-                <source srcset="img/elephant.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/elephant.jpg" media="(min-width: 768px)">
-                <source srcset="img/elephant.webp" type="image/webp">
-                <img src="img/elephant.jpg" alt="Голова жирафа" loading="lazy">
+                <img src="img/elephant.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
               </picture>
             </li>
           </ul>
-          <div class="about__slider-pagination swiper-pagination"></div>
+          <div class="career__slider-pagination swiper-pagination"></div>
           </div>
         </div>
     </section>

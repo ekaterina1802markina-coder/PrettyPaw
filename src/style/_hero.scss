@@ -25,10 +25,10 @@
         background-image: url('../img/poster-xl@2x.jpg');
         background-image: image-set(
             url('../img/poster-xl@4x.webp') 2x,
-            url('../img/poster-xl@2x.webp') 1x,
             url('../img/poster-xl@4x.jpg') 2x,
-            url('../img/poster-xl@2x.jpg') 1x
         );
+        max-width: 2560px;
+        margin: 0 auto;
     }
 
     @include xxl {
@@ -98,7 +98,7 @@
     }
 
     &__video-bg {
-        z-index: 8;
+        z-index: 3;
     }
 }
 
