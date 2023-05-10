@@ -1,7 +1,7 @@
 .navigation {
 
     &__list {
-        // display: none;
+        display: none;
         position: absolute;
         overflow-y: auto;
         background-color: $main;
@@ -45,10 +45,25 @@
     &__link {
         font-weight: 1000;
         line-height: 1;
+        font-size: 16px;
+        white-space: nowrap;
 
         &_active {
             color: $back;
             pointer-events: none;
+        }
+
+        @include xl {
+            display: block;
+            padding: 16px 30px;
+            border: 2px solid $back;
+            border-radius: 80px;
+
+            &_active {
+                color: inherit;
+                pointer-events: none;
+                background-color: $back;
+            }
         }
     }
 
